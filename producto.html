@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link href="library/swiffyslider/css/swiffy-slider.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" id="menuCategoria">
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="producto" class="py-5 bg-body-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6" id="productGallery">
+          <div class="swiffy-slider slider-item-ratio slider-item-ratio-1x1 slider-nav-round slider-nav-nodelay" id="pgallery">
+            <ul class="slider-container">
+              <li>
+                <img src="https://swiffyslider.com/assets/img/shoes/shoe1.webp" loading="lazy" alt="...">
+              </li>
+              <li>
+                <img src="https://swiffyslider.com/assets/img/shoes/shoe2.webp" loading="lazy" alt="...">
+              </li>
+              <li>
+                <img src="https://swiffyslider.com/assets/img/shoes/shoe3.webp" loading="lazy" alt="...">
+              </li>
+              <li>
+                <img src="https://swiffyslider.com/assets/img/shoes/shoe4.webp" loading="lazy" alt="...">
+              </li>
+              <li>
+                <img src="https://swiffyslider.com/assets/img/shoes/shoe5.webp" loading="lazy" alt="...">
+              </li>
+              <li>
+                <img src="https://swiffyslider.com/assets/img/shoes/shoe6.webp" loading="lazy" alt="...">
+              </li>
+            </ul>
+
+            <button type="button" class="slider-nav" aria-label="Go previous"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go next"></button>
+          </div>
+
+          <div
+            class="swiffy-slider slider-nav-dark slider-nav-sm slider-nav-chevron slider-item-show4 slider-item-snapstart slider-item-ratio slider-item-ratio-1x1 slider-nav-visible slider-nav-page slider-nav-outside-expand pt-3 d-none d-lg-block">
+            <ul class="slider-container" id="pgallerythumbs" style="cursor:pointer">
+              <li><img src="https://swiffyslider.com/assets/img/shoes/shoe1.webp" loading="lazy" alt="..." onmouseover="thumbHover(0)"></li>
+              <li><img src="https://swiffyslider.com/assets/img/shoes/shoe2.webp" loading="lazy" alt="..."
+                  onmouseover="thumbHover(1)"></li>
+              <li><img src="https://swiffyslider.com/assets/img/shoes/shoe3.webp" loading="lazy" alt="..."
+                  onmouseover="thumbHover(2)"></li>
+              <li><img src="https://swiffyslider.com/assets/img/shoes/shoe4.webp" loading="lazy" alt="..."
+                  onmouseover="thumbHover(3)"></li>
+              <li><img src="https://swiffyslider.com/assets/img/shoes/shoe5.webp" loading="lazy" alt="..."
+                  onmouseover="thumbHover(4)"></li>
+              <li><img src="https://swiffyslider.com/assets/img/shoes/shoe6.webp" loading="lazy" alt="..."
+                  onmouseover="thumbHover(5)"></li>
+            </ul>
+
+            <button type="button" class="slider-nav" aria-label="Go previous"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go next"></button>
+          </div>
+
+
+        </div>
+        <div class="col-12 col-lg-6">
+          <h3 id="nombreProducto">Nike ZoomX Invincible Run Flyknit</h3>
+          <p>
+          </p>
+          <div id="estrellasProducto">
+           
+          </div>
+          <div id="categoriaProducto">Men's Road Running Shoes</div>
+          <div><small id="skuProducto">CT2228-700</small></div>
+          <p></p>
+          <div class="h3">$<span id="precioProducto">180</span></div>
+          <div class="mb-1" id="tagsProducto">
+            
+          </div>
+          <p id="descripcionProducto">
+            Get after those long runs with lightweight, responsive foam that delivers a soft feel with every step. A
+            Flyknit upper gives your foot breathability where you need it most and secure fit you can depend on.
+          </p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h5>Marca:</h5>
+              <span id="marcaProducto">SKUP</span>
+            </li>
+            <li class="list-group-item">
+              <h5>Stock:</h5>
+              <span id="stockProducto">SKUP</span>
+            </li>
+            <li class="list-group-item">
+              <h5>Garantia:</h5>
+              <span id="garantiaProducto">SKUP</span>
+            </li>
+           
+          </ul>
+          <p></p>
+
+
+          <button class="btn btn-dark btn-lg mt-2 mt-lg-4 rounded-pill d-block w-50">Add to cart</button>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" >
+          <div class="accordion" id="detalle">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="library/swiffyslider/js/swiffy-slider.min.js"></script>
+  <script src="assets/js/producto.js"></script>
+  <script src="assets/js/favorito.js"></script>
+  <script src="assets/js/helpers.js"></script>
+
+  <script>
+    function thumbHover(imageNumber) {
+      //Find the slider element
+      const sliderElement = document.getElementById('pgallery');
+      //Slide to he right image
+      swiffyslider.slideTo(sliderElement, imageNumber)
+    }
+  </script>
+</body>
+
+</html>

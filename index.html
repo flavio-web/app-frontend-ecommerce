@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/loading.css">
+</head>
+
+<body>
+  <div id="loading" style="display: none;">
+    <div class="preloader">
+      <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+          <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+            <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+            <circle cx="43" cy="111" r="13" />
+            <circle cx="102" cy="111" r="13" />
+          </g>
+          <g class="cart__lines" stroke="currentColor">
+            <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+            <g class="cart__wheel1" transform="rotate(-90,43,111)">
+              <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+            </g>
+            <g class="cart__wheel2" transform="rotate(90,102,111)">
+              <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+            </g>
+          </g>
+        </g>
+      </svg>
+      <div class="preloader__text">
+        <p class="preloader__msg">Cargando...</p>
+        <p class="preloader__msg preloader__msg--last">Pronto terminamos...</p>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" id="menuCategoria">
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header pt-7">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="image-container mb-5 px-4 h-100">
+            <img src="assets/img/header.png" class="img-fluid" alt="...">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-5">
+            <h1 class="display-3 text-primary">Sodinfo Cia. Ltda.</h1>
+            <p class="lead text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio pariatur tempora
+              necessitatibus, fugit vitae laudantium ipsa exercitationem ut optio, alias consequatur. Impedit aliquam
+              inventore quisquam sequi deserunt dolor pariatur.
+            </p>
+            <button class="btn btn-outline-primary text-uppercase">Conocenos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="categorias" class="py-5 bg-body-secondary">
+    <div class="container">
+
+      <div class="d-flex align-content-stretch flex-wrap justify-content-between"></div>
+
+      <div class="row mt-4">
+        <div class="col-lg-12 card-margin">
+          <div class="cardSearch search-form">
+            <div class="card-body p-0">
+              <form id="search-form">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+                      <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                        <select class="form-control" id="searchOptions">
+                         
+                        </select>
+                      </div>
+                      <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                        <input type="text" placeholder="Search..." class="form-control" id="search" name="search">
+                      </div>
+                      <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                        <button type="button" class="btn btn-base" id="btnSearch">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="container-fluid">
+      <div class="d-flex align-content-stretch flex-wrap justify-content-center" id="productos">
+        
+        
+       
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/helpers.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/favorito.js"></script>
+</body>
+
+</html>
